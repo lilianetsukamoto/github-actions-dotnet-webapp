@@ -25,7 +25,6 @@ jobs:
         run: |
           npm ci
           npx ts-node-script ./index.ts
-        working-directory: ./script/validate-data
 
   script-personalizado:
     runs-on: ubuntu-latest

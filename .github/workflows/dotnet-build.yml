@@ -21,10 +21,13 @@ jobs:
       - name: Setup Node.js
         id: setup-node
         uses: actions/setup-node@v4
+        with:
+          node-version: 20.6.0
+          cache: npm
 
       - name: Install Dependencies
         id: npm-ci
-        run: npm@5 
+        run: npm ci
 
       - name: Check Format
         id: npm-format-check

@@ -44,7 +44,7 @@ jobs:
   script-personalizado:
     runs-on: ubuntu-latest
     env:
-      WORKFLOW:"Workflow executado!"
+      WORKFLOW: "Workflow executado!"
     steps:
       - name: Executar linha do script
         run: echo "::add-mask::$WORKFLOW"
